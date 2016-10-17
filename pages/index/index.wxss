@@ -219,7 +219,12 @@ view.text text {
   float: right;
   display: inline-block;
 }
-
+.golds_financial .depositName{ 
+  margin-top:20rpx; 
+  margin-bottom:10rpx; 
+  font-size: 16rpx;
+  color: #d8d8d8;
+}
 .golds_financial image{
   width: 60rpx;
   height: 60rpx;

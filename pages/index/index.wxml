@@ -47,8 +47,8 @@
             <view  wx:if="{{item.rateType == 1}}"><text>{{item.rateText}}%</text></view> 
             <view  wx:if="{{item.rateType == 2}}"><image class="des" src="{{item.rateUrl}}"></image></view> 
             <view  wx:elif="{{item.rateType == 3}}"><text class="des">{{item.rateText}}</text> <text class="unit">元/克</text></view>  
-            <view>{{depositName}}</view>
-            <view class="buy_financial" >
+            <view  class="depositName">{{item.depositName}}</view>
+            <view  class="buy_financial" >
                 <view class="des">立即购买</view>
                 <text class="sale" wx:if="{{item.alreadyBuyGold > 0}}">(已售{{item.alreadyBuyGold}} 克)</text>  
                 <text class="sale" wx:if="{{item.alreadyBuyMoney > 0}}">(已售{{item.alreadyBuyMoney}} 元)</text>  
