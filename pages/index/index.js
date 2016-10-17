@@ -1,5 +1,7 @@
-//index.js
-//获取应用实例
+//index.js  页面逻辑
+
+var ajax = require("../../ajax/ajax.js");
+
 var app = getApp()
 Page( {
   data: {
@@ -44,6 +46,7 @@ Page( {
         srcType:'4',
       }
     ],
+    financial_list:null,
     ton:10,
     Kg:969,
     gram:845,
@@ -61,9 +64,18 @@ Page( {
     //console.log(e.detail.current)
   },
 
-  onLoad: function() {
-    console.log( 'onLoad' )
+  onLoad: function() { 
     var that = this
+
+    //赋值 理财列表 
+    ajax.getFinancial(function(arr){
+         console.log(arr);
+         
+         that.setData( {
+            financial_list: arr
+         });
+    });
+
     //调用应用实例的方法获取全局数据
     app.getUserInfo( function( userInfo ) {
       //更新数据
