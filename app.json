@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/list/index",
+    "pages/template/index",
+    "pages/component/index",
+    "pages/i/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "黄金钱包",
+    "navigationBarBackgroundColor": "#f2b643",
+    "backgroundColor": "#ffffff",
+    "enablePullDownRefresh": true 
+  },
+  "tabBar": {
+    "color": "#d8d8d8",
+    "selectedColor": "#f2b643",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "image/home_page/icon_XX-Net.lnk2.png",
+      "selectedIconPath": "image/home_page/icon_XX-Net.lnk.png",
+      "text": "热卖"
+    }, {
+      "pagePath": "pages/list/index",
+      "iconPath": "image/home_page/icon_product_icon_product2.png",
+      "selectedIconPath": "image/home_page/icon_product_icon_product.png",
+      "text": "全部"
+    }, {
+      "pagePath": "pages/component/index",
+      "iconPath": "image/home_page/icon_service_icon_service2.png",
+      "selectedIconPath":"image/home_page/icon_service_icon_service.png",
+      "text": "发现"
+    }, {
+      "pagePath": "pages/i/index",
+      "iconPath": "image/home_page/icon_mine_icon_mine2.png",
+      "selectedIconPath": "image/home_page/icon_mine_icon_mine.png",
+      "text": "我的"
+    }]
+  },
+  "debug": true
+}

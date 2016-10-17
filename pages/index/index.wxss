@@ -1,0 +1,241 @@
+.container {
+  background-color: #F2f2f2;
+}
+
+view.section {
+  /*display: block;*/
+  /*width: 100%;*/
+}
+
+/*轮播*/
+.swiper_box {
+  /*width: 100%;*/
+  height: 187.5px;
+}
+swiper.swiper {
+  height: 100%;
+}
+.swiper-item {
+    display: block;
+    height: 100%;
+}
+
+/*分类*/
+.index-nav {
+  height: 80px;
+  /*background: red;*/
+  display: flex;
+  flex-direction: row;
+  /*align-items: center;*/
+  background-color: #fff;
+  color: #646464;
+}
+.index-nav view {
+  flex: 1;
+  flex-direction: column;
+  border-right: 1px solid #F2f2f2;
+}
+.index-nav image {
+  width: 50px;
+  height: 50px;
+}
+.index-nav text {
+  font-size: 16px;
+}
+.nav-block{ 
+  position: relative;
+  display: block
+}
+.nav-block-image {   
+  position: absolute;
+  top:15px;
+  left: 30px;
+  overflow: hidden; 
+}
+.nav-block-title{ 
+  position: absolute;
+  top:20px;
+  left: 90px;
+  color:#f2b643
+}
+.nav-block-text{ 
+  position: absolute;
+  top:50px;
+  left: 90px;
+  font-size:12px;
+  color:#d8d8d8
+}
+.slide-image {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+}
+
+view.text {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px 10px 10px 12px;
+  font-size: 15px;
+  color: #656565;
+}
+
+view.text:before {
+    position: absolute;
+    display: block;
+    content: ' ';
+    left: -5px;
+    width: 2px;
+    height: 100%;
+    background-color: #09bb07;
+}
+
+view.text text {
+  margin-left: 10px;
+  line-height: 18px;
+}
+
+.item {
+  margin-bottom: 7px;
+  height: 126px;
+}
+
+/* 金价 */
+.price-gold{ 
+  background-color: #ffffff;
+}
+.price-gold .top{
+   width: 100%;
+   height: 40px;
+   line-height: 40px;
+   background-color: #F2f2f2; 
+}
+.price-gold .real-time-price{ 
+  margin-left: 20px;
+  font-size: 18px;
+  color:#444444;
+} 
+.price-gold .line_y {
+  width: 3px; 
+  height: 20px;
+  vertical-align: middle; 
+  margin-left: 15px;
+  margin-right: 10px;
+  display: inline-block;
+  background-color: #f2b643;
+}
+.price-gold .reference{ 
+  font-size: 12px;
+  color:#d8d8d8;
+} 
+.price-gold .refresh{
+  width:12;
+  height:12;    
+  background-image:url('../../images/refresh.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display:inline-block
+} 
+
+.price-gold .content{ 
+  width:100%;
+  height:120px;    
+  position: relative;
+  display: block
+}
+.price-gold .content .des{
+  position: absolute;  
+  top: 30px;
+  left: 25px; 
+  font-size: 18px;
+  color:#f2b643;
+}
+.price-gold .content .unit{
+  position: absolute;  
+  top: 32px;
+  left: 85px;  
+  font-size: 14px;
+  color:#f2b643;
+} 
+.price-gold .market-price{ 
+  position: absolute;  
+  top: 55px;
+  left: 25px;  
+  font-size: 14px;
+  color:#d8d8d8;
+}
+.price-gold .market-price .market-price-money{
+  height: 14px;
+  line-height: 14px;
+  vertical-align: top; 
+  text-decoration:line-through; 
+  display: inline-block;
+}
+.price-gold .price-trend{ 
+  position: absolute;  
+  top: 75px;
+  left: 25px;   
+}
+.price-gold .price-trend .trend{  
+  font-size: 14px;
+  color:#f2b643;
+}
+.price-gold .content .buy{
+  width: 85px;
+  height:45px;
+  position: absolute;  
+  top: 40px;
+  left: 270px; 
+  color:#ffffff;
+  background: #f2b643
+}
+
+/* 理财黄金 */
+.golds_financial{
+  text-align: center;
+}
+.golds_financial image{
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* footer 文字*/
+.footer{
+  margin-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.footer-des{
+  margin-top: 10px;
+}
+.footer-big{
+  font-size: 20px;
+  color:#444444;
+}
+.footer-insurance-text{
+  font-size: 12px;
+  color:#FF0000;
+}
+.footer-insurance-style-text{
+  font-size: 10px;
+  color:#444444;  
+  text-decoration: underline;
+}
+.footer-tips-text{
+  font-size: 12px;
+  color:#d8d8d8;
+}
+.footer-unit{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+  color:#444444;
+} 
+.footer-image{
+  width: 12px;
+  height: 12px;
+  display: inline-block
+}

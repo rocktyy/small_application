@@ -1,0 +1,78 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="section section_gap swiper_box">
+        <swiper class="swiper" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+            <block wx:for-items="{{images}}">
+                <swiper-item catchtap="gos">
+                    <image src="{{item.image}}" class="slide-image" data-url="{{item.url}}" />
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+
+    <view class="section index-nav">
+        <block wx:for-items="{{navs}}">
+            <view class="nav-block" catchtap="go" data-type="{{item.text}}"> 
+                    <image src="{{item.image}}" class="nav-block-image"/>
+                    <text class="nav-block-title">{{item.title}}</text>  
+                    <span class="nav-block-text">{{item.text}}</span>  
+            </view>
+        </block>
+    </view>
+
+    <view class="price-gold"> 
+        <view class="top">  
+             <text class="real-time-price">实时金价</text><text class="line_y"></text> <text class="reference">参考国际金价</text>  
+             <view class="refresh"></view>
+        </view>
+        <view class="content">   
+            <text class="des">273.64</text> <text class="unit">元/克</text>
+            <view class="market-price"> 市场价: <text class="market-price-money">340.00</text> 元/克</view> 
+            <view class="price-trend"><text class="trend">金价走势 ></text></view> 
+            <button class="buy" >买入</button>
+        </view>  
+    </view>  
+    
+    <!--
+    <block wx:for-items="{{golds_financial}}">
+        <view class="golds_financial" catchtap="buy">
+            <view  wx:if="{{item.srcType == 2}}"><text class="des">{{item.rate}}</text> <text class="unit">元/克</text></view> 
+            <view  wx:elif="{{item.srcType == 3}}"><image class="des" src="{{item.image}}"></image></view> 
+            <view  wx:elif="{{item.srcType == 4}}"><text>{{item.rateText}}</text></view> 
+            <view>1223</view>
+            <view class="buy_financial" >
+                <text class="des">立即购买</text>
+                <text class="sale">(已售{{weight}} {{unit}})</text> 
+            </view> 
+        </view>
+    </block>
+    -->
+  
+    <block wx:for-items="{{items}}">
+        <view class="item" catchtap="gos">
+            <image src="{{item.image}}" class="slide-image"/>
+        </view>
+    </block>
+
+ 
+    <view class="footer">
+       <view>累计为用户管理黄金</view>
+       <view class="footer-des"> 
+         <text class="footer-big">{{ton}}</text>
+         <text class="footer-unit">吨</text>
+         <text class="footer-big">{{Kg}}</text><text class="footer-unit">千克</text>
+         <text class="footer-big">{{gram}}</text><text class="footer-unit">克</text>
+       </view>  
+       <view class="footer-insurance"> 
+         <!--<image src="{{pro_img}}" class="footer-image"/>-->
+         <text class="footer-insurance-text">中华联合财险承保用户黄金财产安全</text> 
+       </view>  
+       <view class="footer-insurance-style">  
+         <text class="footer-insurance-style-text">查看保单样式</text> 
+       </view>  
+       <view class="footer-tips">  
+         <text class="footer-tips-text">市场有风险 投资需谨慎</text> 
+       </view>  
+    </view>  
+</view>
