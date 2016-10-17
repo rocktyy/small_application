@@ -69,10 +69,9 @@ Page( {
 
     //赋值 理财列表 
     ajax.getFinancial2(function(arr){
-         console.log(arr);
-
+         console.log(arr.data.data.depositPromotionList);  
          that.setData( {
-            financial_list: arr
+            golds_financial: arr.data.data.depositPromotionList
          });
     });
 

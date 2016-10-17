@@ -194,12 +194,29 @@ view.text text {
 
 /* 理财黄金 */
 .golds_financial{
+  margin-top:20rpx; 
   text-align: center;
+  background: #ffffff
 }
+.golds_financial .title{ 
+  height: 20rpx;
+  padding-top:20rpx; 
+  display: inline-block;
+}
+
 .golds_financial image{
-  width: 20px;
-  height: 20px;
-  display: block;
+  width: 60rpx;
+  height: 60rpx;
+  text-align: center;
+  display: inline-block;
+}
+.golds_financial .buy_financial{ 
+  padding-bottom:20rpx; 
+}
+
+.safe{ 
+  margin-top:10rpx;  
+  background: #ffffff
 }
 
 /* footer 文字*/

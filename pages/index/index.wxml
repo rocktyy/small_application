@@ -33,24 +33,28 @@
             <button class="buy" >买入</button>
         </view>  
     </view>  
-    
-    <!--
+     
     <block wx:for-items="{{golds_financial}}">
-        <view class="golds_financial" catchtap="buy">
-            <view  wx:if="{{item.srcType == 2}}"><text class="des">{{item.rate}}</text> <text class="unit">元/克</text></view> 
-            <view  wx:elif="{{item.srcType == 3}}"><image class="des" src="{{item.image}}"></image></view> 
-            <view  wx:elif="{{item.srcType == 4}}"><text>{{item.rateText}}</text></view> 
-            <view>1223</view>
+        <view class="golds_financial" catchtap="buy">  
+            <view class="title"><text>{{item.name}}</text> 
+                <block wx:for-items="{{tagImgUrl}}"> 
+                    <image src="{{this}}" class="slide-image"/> 
+                </block>
+            </view>  
+            <view  wx:if="{{item.rateType == 1}}"><text>{{item.rateText}}%</text></view> 
+            <view  wx:if="{{item.rateType == 2}}"><image class="des" src="{{item.rateUrl}}"></image></view> 
+            <view  wx:elif="{{item.rateType == 3}}"><text class="des">{{item.rateText}}</text> <text class="unit">元/克</text></view>  
+            <view>{{depositName}}</view>
             <view class="buy_financial" >
-                <text class="des">立即购买</text>
-                <text class="sale">(已售{{weight}} {{unit}})</text> 
+                <view class="des">立即购买</view>
+                <text class="sale" wx:if="{{item.alreadyBuyGold > 0}}">(已售{{item.alreadyBuyGold}} 克)</text>  
+                <text class="sale" wx:if="{{item.alreadyBuyMoney > 0}}">(已售{{item.alreadyBuyMoney}} 元)</text>  
             </view> 
         </view>
-    </block>
-    -->
+    </block> 
   
     <block wx:for-items="{{items}}">
-        <view class="item" catchtap="gos">
+        <view class="item safe" catchtap="gos">
             <image src="{{item.image}}" class="slide-image"/>
         </view>
     </block>
