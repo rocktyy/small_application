@@ -196,11 +196,27 @@ view.text text {
 .golds_financial{
   margin-top:20rpx; 
   text-align: center;
-  background: #ffffff
+  background: #ffffff;
+  position: relative;
+}
+.golds_financial .navs{  
+  position: absolute;
+  top:0rpx;
+  left: 50rpx; 
+  width: 80rpx;
+  height: 80rpx; 
+  display: inline-block;
 }
 .golds_financial .title{ 
   height: 20rpx;
   padding-top:20rpx; 
+  display: inline-block;
+}
+.golds_financial .title image{  
+  width: 40rpx;
+  height: 40rpx;
+  margin-left:10rpx; 
+  float: right;
   display: inline-block;
 }
 

@@ -35,10 +35,13 @@
     </view>  
      
     <block wx:for-items="{{golds_financial}}">
-        <view class="golds_financial" catchtap="buy">  
+        <view class="golds_financial" catchtap="buy">   
+            <view class="navs"> 
+                    <image src="{{item.cornerTagImgUrl}}" class="slide-image"/>  
+            </view>  
             <view class="title"><text>{{item.name}}</text> 
-                <block wx:for-items="{{tagImgUrl}}"> 
-                    <image src="{{this}}" class="slide-image"/> 
+                <block wx:for-items="{{item.tagImgUrl}}"> 
+                    <image src="{{item}}" class="slide-image"/> 
                 </block>
             </view>  
             <view  wx:if="{{item.rateType == 1}}"><text>{{item.rateText}}%</text></view> 
