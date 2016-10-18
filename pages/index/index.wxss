@@ -213,11 +213,12 @@ view.text text {
   display: inline-block;
 }
 .golds_financial .title .title-des{ 
-  color: #444444;
+  color: #000000;
 }
 .golds_financial .title image{  
-  width: 80rpx;
-  height: 40rpx;
+  width: 60rpx;
+  height: 30rpx;
+  margin-top:5rpx; 
   margin-left:10rpx; 
   float: right;
   display: inline-block;
