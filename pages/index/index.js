@@ -69,11 +69,7 @@ Page( {
          var length = brr.length;
          var  ton   = brr.slice(0,length-6);
          var  Kg    = brr.slice(length-6,length-3);
-         var  gram  = brr.slice(length-3,length);  
-         
-         console.log(ton);    
-         console.log(Kg);    
-         console.log(gram);    
+         var  gram  = brr.slice(length-3,length);   
          that.setData({
             golds_financial: arr.data.data.depositPromotionList,
             images: arr.data.data.bannerList,

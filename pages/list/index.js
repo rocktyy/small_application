@@ -1,7 +1,7 @@
 Page({
   data: {
     title: '',
-    items: [{"mprice":0,"maxpacks":100,"price":12800,"subcate":210,"remains":998,"type":1,"freight":0,"title":"理财","imgs":["https://img.g-banker.com/data/test/banner/W87F6WX5_20160902144227.png"],"id":302,"quantity":"1"}]
+    items: [{"title":"理财","price":302,"unit":"元","imgs":["https://img.g-banker.com/data/test/banner/W87F6WX5_20160902144227.png"]}]
   },
   //事件处理函数
   onLoad: function (options) {
