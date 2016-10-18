@@ -63,7 +63,7 @@ Page( {
     var that = this
 
     //赋值 理财列表 
-    ajax.getFinancial2(function(arr){  
+    ajax.getFinancial(function(arr){  
          console.log(arr.data.data);  
 
          that.setData( {

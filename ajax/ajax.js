@@ -2,24 +2,8 @@
 // setData()  参数不超过 1024kb 
 //页面的生命周期 相同 
 //支付体系  会员体系  
-
-//获取常用数据列表
-function getFinancial(callback)
-{
-    wx.request({
-      url: 'http://op.juhe.cn/onebox/exchange/query?key=775b6f435f5967f55170ea58f5c40806',
-      header: {
-          'Content-Type': 'application/json'
-      },
-      success: function(res) {
-        //数据处理
-        callback(res)
-      }
-    })
-}
- 
 //获取 理财数据列表
-function getFinancial2(callback)
+function getFinancial(callback)
 {
     wx.request({
       url: 'https://api.huangjinqianbao.com/server/info/getHomeInfo',
@@ -45,7 +29,6 @@ function getFinancial2(callback)
 }
 
 
-module.exports = { 
-  getFinancial: getFinancial, 
-  getFinancial2:getFinancial2
+module.exports = {  
+  getFinancial:getFinancial
 }
