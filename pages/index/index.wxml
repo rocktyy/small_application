@@ -39,19 +39,28 @@
             <view class="navs"> 
                     <image src="{{item.cornerTagImgUrl}}" class="slide-image"/>  
             </view>  
-            <view class="title"><text>{{item.name}}</text> 
+            <view class="title">
+                <text class="title-des">{{item.name}}</text> 
                 <block wx:for-items="{{item.tagImgUrl}}"> 
                     <image src="{{item}}" class="slide-image"/> 
                 </block>
             </view>  
-            <view  wx:if="{{item.rateType == 1}}"><text>{{item.rateText}}%</text></view> 
+            <view  wx:if="{{item.rateType == 1}}">  
+               <text  wx:if="{{item.groupType == 1}}" class="gold-color">{{item.rateText}}%</text> 
+               <text  wx:if="{{item.groupType == 2}}" class="financial-color">{{item.rateText}}%</text>  
+            </view> 
             <view  wx:if="{{item.rateType == 2}}"><image class="des" src="{{item.rateUrl}}"></image></view> 
-            <view  wx:elif="{{item.rateType == 3}}"><text class="des">{{item.rateText}}</text> <text class="unit">元/克</text></view>  
-            <view  class="depositName">{{item.depositName}}</view>
-            <view  class="buy_financial" >
-                <view class="des">立即购买</view>
-                <text class="sale" wx:if="{{item.alreadyBuyGold > 0}}">(已售{{item.alreadyBuyGold}} 克)</text>  
-                <text class="sale" wx:if="{{item.alreadyBuyMoney > 0}}">(已售{{item.alreadyBuyMoney}} 元)</text>  
+            <view  wx:elif="{{item.rateType == 3}}"><text class="des">{{item.rateText}}</text> <text class="unit">元/克</text></view>   
+            <view  class="depositName" color="{{item.color}}">{{item.depositName}}</view>               
+            <view  wx:if="{{item.groupType == 1}}"   class="buy_financial gold-border"> 
+                <view class="gold-buy-now">立即购买</view>
+                <view class="gold-sale" wx:if="{{item.alreadyBuyGold > 0}}">(已售{{item.alreadyBuyGold}} 克)</view>  
+                <view class="gold-sale" wx:if="{{item.alreadyBuyMoney > 0}}">(已售{{item.alreadyBuyMoney}} 元)</view>  
+            </view> 
+            <view  wx:if="{{item.groupType == 2}}"   class="buy_financial financial-border"> 
+                <view class="financial-buy-now">立即购买</view>
+                <view class="financial-sale" wx:if="{{item.alreadyBuyGold > 0}}">(已售{{item.alreadyBuyGold}} 克)</view>  
+                <view class="financial-sale" wx:if="{{item.alreadyBuyMoney > 0}}">(已售{{item.alreadyBuyMoney}} 元)</view>  
             </view> 
         </view>
     </block> 

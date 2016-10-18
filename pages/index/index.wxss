@@ -212,18 +212,29 @@ view.text text {
   padding-top:20rpx; 
   display: inline-block;
 }
+.golds_financial .title .title-des{ 
+  color: #444444;
+}
 .golds_financial .title image{  
   width: 80rpx;
   height: 40rpx;
   margin-left:10rpx; 
   float: right;
   display: inline-block;
-}
+} 
+.golds_financial .gold-color{ 
+  font-size: 16rpx;
+  color: #f3bc52;
+} 
+.golds_financial .financial-color{ 
+  font-size: 16rpx;
+  color: #89b0ff;
+} 
 .golds_financial .depositName{ 
   margin-top:15rpx; 
   margin-bottom:10rpx; 
   font-size: 16rpx;
-  color: #d8d8d8;
+  color: #a5a5a5;
 }
 .golds_financial image{
   width: 60rpx;
@@ -232,7 +243,35 @@ view.text text {
   display: inline-block;
 }
 .golds_financial .buy_financial{ 
-  padding-bottom:20rpx; 
+  margin-left:20rpx; 
+  margin-right:20rpx; 
+  margin-bottom:20rpx; 
+}
+.golds_financial .buy_financial .gold-buy-now{  
+  color: #f3bc52;
+  padding-top:10rpx; 
+}
+.golds_financial .buy_financial .financial-buy-now{  
+  color: #89b0ff;
+  padding-top:10rpx; 
+}
+.golds_financial .buy_financial .gold-sale{ 
+  font-size: 16rpx;
+  color: #f3bc52; 
+  padding-top:5rpx; 
+  padding-bottom:10rpx; 
+}
+.golds_financial .buy_financial .financial-sale{ 
+  font-size: 16rpx;
+  color: #89b0ff; 
+  padding-top:5rpx; 
+  padding-bottom:10rpx; 
+}
+.golds_financial .gold-border{
+  border: 1px solid #f3bc52;
+}
+.golds_financial .financial-border{
+  border: 1px solid #89b0ff;
 }
 
 .safe{ 

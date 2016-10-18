@@ -4,7 +4,7 @@ var app = getApp()
 Page( {
   data: {
     userInfo: {avatarUrl:'../../image/avator.jpg',nickName:'qieangel2013'},
-    source: 'https://github.com/qieangel2013/SmallApp'
+    source: 'https://github.com/rocktyy/small_application'
   },
   //事件处理函数
   bindViewTap: function() {
