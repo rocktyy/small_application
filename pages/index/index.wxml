@@ -5,7 +5,7 @@
                 autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
             <block wx:for-items="{{images}}">
                 <swiper-item catchtap="gos">
-                    <image src="{{item.image}}" class="slide-image" data-url="{{item.url}}" />
+                    <image src="{{item.imageUrl}}" class="slide-image" data-url="{{item.url}}" />
                 </swiper-item>
             </block>
         </swiper>

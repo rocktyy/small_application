@@ -194,7 +194,7 @@ view.text text {
 
 /* 理财黄金 */
 .golds_financial{
-  margin-top:40rpx; 
+  margin-top:30rpx; 
   text-align: center;
   background: #ffffff;
   position: relative;
@@ -288,13 +288,13 @@ view.text text {
 }
 
 .safe{ 
-  margin-top:10rpx;  
+  margin-top:15rpx;  
   background: #ffffff
 }
 
 /* footer 文字*/
 .footer{
-  margin-top: 20px;
+  margin-top: 10px;
   padding-bottom: 20px;
   text-align: center;
 }

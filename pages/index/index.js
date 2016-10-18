@@ -4,12 +4,7 @@ var ajax = require("../../ajax/ajax.js");
 
 var app = getApp()
 Page( {
-  data: {
-    // 轮播
-    images: [ 
-       {image:'https://img.g-banker.com/data/test/banner/W87F6WX5_20160902144227.png',url:'https://www.baidu.com'},
-       {image:'https://img.g-banker.com/data/test/banner/O5XL5W67_20160909195324.png',url:'234'} 
-    ], 
+  data: { 
     indicatorDots: true,
     vertical: false,
     autoplay: true,
@@ -68,13 +63,14 @@ Page( {
     var that = this
 
     //赋值 理财列表 
-    ajax.getFinancial2(function(arr){
-         console.log(arr.data.data.depositPromotionList);  
+    ajax.getFinancial2(function(arr){  
+         console.log(arr.data.data);  
+
          that.setData( {
-            golds_financial: arr.data.data.depositPromotionList
+            golds_financial: arr.data.data.depositPromotionList,
+            images: arr.data.data.bannerList
          });
     });
-
     //调用应用实例的方法获取全局数据
     app.getUserInfo( function( userInfo ) {
       //更新数据

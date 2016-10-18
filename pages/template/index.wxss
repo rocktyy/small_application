@@ -20,3 +20,9 @@
   margin-top: 50px;
   text-align: center;
 }
+.content{
+  width: 500rpx;
+  margin: 0 auto;
+  margin-top: 100rpx;
+  text-align: center
+}
