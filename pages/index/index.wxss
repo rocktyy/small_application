@@ -194,7 +194,7 @@ view.text text {
 
 /* 理财黄金 */
 .golds_financial{
-  margin-top:20rpx; 
+  margin-top:40rpx; 
   text-align: center;
   background: #ffffff;
   position: relative;
@@ -224,25 +224,36 @@ view.text text {
   display: inline-block;
 } 
 .golds_financial .gold-color{ 
-  font-size: 16rpx;
+  margin-top:20rpx; 
+  margin-bottom:20rpx; 
+  font-size: 40rpx;
   color: #f3bc52;
 } 
-.golds_financial .financial-color{ 
-  font-size: 16rpx;
+.golds_financial .financial-color{  
+  margin-top:20rpx; 
+  margin-bottom:20rpx; 
+  font-size: 40rpx;
   color: #89b0ff;
 } 
-.golds_financial .depositName{ 
-  margin-top:15rpx; 
-  margin-bottom:10rpx; 
-  font-size: 16rpx;
-  color: #a5a5a5;
-}
 .golds_financial image{
   width: 60rpx;
   height: 60rpx;
   text-align: center;
   display: inline-block;
 }
+.golds_financial  .rate-image{
+  width: 80rpx;
+  height: 80rpx;
+  margin-top:10rpx; 
+  text-align: center;
+  display: inline-block;
+}
+.golds_financial .depositName{ 
+  margin-top:15rpx; 
+  margin-bottom:10rpx; 
+  font-size: 16rpx;
+  color: #a5a5a5;
+} 
 .golds_financial .buy_financial{ 
   margin-left:40rpx; 
   margin-right:40rpx; 

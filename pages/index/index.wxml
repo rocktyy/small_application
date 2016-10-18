@@ -46,10 +46,10 @@
                 </block>
             </view>  
             <view  wx:if="{{item.rateType == 1}}">  
-               <text  wx:if="{{item.groupType == 1}}" class="gold-color">{{item.rateText}}%</text> 
-               <text  wx:if="{{item.groupType == 2}}" class="financial-color">{{item.rateText}}%</text>  
+               <view  wx:if="{{item.groupType == 1}}" class="gold-color">{{item.rateText}}%</view> 
+               <view  wx:if="{{item.groupType == 2}}" class="financial-color">{{item.rateText}}%</view>  
             </view> 
-            <view  wx:if="{{item.rateType == 2}}"><image class="des" src="{{item.rateUrl}}"></image></view> 
+            <view  wx:if="{{item.rateType == 2}}"><image class="rate-image" src="{{item.rateUrl}}"></image></view> 
             <view  wx:elif="{{item.rateType == 3}}"><text class="des">{{item.rateText}}</text> <text class="unit">元/克</text></view>   
             <view  class="depositName" color="{{item.color}}">{{item.depositName}}</view>               
             <view  wx:if="{{item.groupType == 1}}"   class="buy_financial gold-border"> 
