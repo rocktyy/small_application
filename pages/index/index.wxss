@@ -294,16 +294,40 @@ view.text text {
 
 /* footer 文字*/
 .footer{
-  margin-top: 10px;
-  padding-bottom: 20px;
+  margin-top: 30rpx;
+  padding-bottom: 20rpx;
   text-align: center;
+}
+.footer .ueser-des{
+  color: #a5a5a5
 }
 .footer-des{
   margin-top: 10px;
 }
-.footer-big{
-  font-size: 20px;
+.footer-big{ 
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-left: 10rpx; 
+  padding-left: 8rpx; 
+  padding-right: 8rpx; 
+  font-size: 36rpx;
   color:#444444;
+  border-radius: 5rpx;
+  background: #ffffff;
+} 
+.footer-insurance{
+  width: 500rpx;
+  height: 50rpx; 
+  line-height: 50rpx;
+  margin: 0 auto;
+}
+.footer-insurance .insurance-image{ 
+  width: 25rpx;
+  height: 25rpx;
+  margin-left:65rpx;  
+  margin-top:15rpx;  
+  float: left;
+  display: inline-block;
 }
 .footer-insurance-text{
   font-size: 12px;
@@ -319,8 +343,8 @@ view.text text {
   color:#d8d8d8;
 }
 .footer-unit{
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
   font-size: 12px;
   color:#444444;
 } 

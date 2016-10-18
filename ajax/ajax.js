@@ -26,8 +26,7 @@ function getFinancial(callback)
         callback(res)
       }
     })
-}
-
+} 
 
 module.exports = {  
   getFinancial:getFinancial

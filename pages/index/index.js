@@ -5,6 +5,7 @@ var ajax = require("../../ajax/ajax.js");
 var app = getApp()
 Page( {
   data: { 
+    guard:'../../image/guard.png',
     indicatorDots: true,
     vertical: false,
     autoplay: true,
@@ -41,10 +42,7 @@ Page( {
         srcType:'4',
       }
     ],
-    financial_list:null,
-    ton:10,
-    Kg:969,
-    gram:845,
+    financial_list:null, 
     pro_img:'',
   },
 
@@ -65,10 +63,22 @@ Page( {
     //赋值 理财列表 
     ajax.getFinancial(function(arr){  
          console.log(arr.data.data);  
-
-         that.setData( {
+         var  totalGoldWeight = arr.data.data.totalGoldWeight; 
+         console.log();   
+         var brr    = (Math.floor(11068760598/1000) +"").split("");
+         var length = brr.length;
+         var  ton   = brr.slice(0,length-6);
+         var  Kg    = brr.slice(length-6,length-3);
+         var  gram  = brr.slice(length-3,length);  
+         
+         console.log(ton);    
+         console.log(Kg);    
+         console.log(gram);    
+         that.setData({
             golds_financial: arr.data.data.depositPromotionList,
-            images: arr.data.data.bannerList
+            images: arr.data.data.bannerList,
+            marketPrice:arr.data.data.marketPrice,
+            ton:ton,Kg:Kg,gram:gram,
          });
     });
     //调用应用实例的方法获取全局数据

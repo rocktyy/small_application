@@ -28,7 +28,7 @@
         </view>
         <view class="content">   
             <text class="des">273.64</text> <text class="unit">元/克</text>
-            <view class="market-price"> 市场价: <text class="market-price-money">340.00</text> 元/克</view> 
+            <view class="market-price"> 市场价: <text class="market-price-money">{{marketPrice}}</text> 元/克</view> 
             <view class="price-trend"><text class="trend">金价走势 ></text></view> 
             <button class="buy" >买入</button>
         </view>  
@@ -73,15 +73,23 @@
 
  
     <view class="footer">
-       <view>累计为用户管理黄金</view>
+       <view class="ueser-des">累计为用户管理黄金</view>
        <view class="footer-des"> 
-         <text class="footer-big">{{ton}}</text>
-         <text class="footer-unit">吨</text>
-         <text class="footer-big">{{Kg}}</text><text class="footer-unit">千克</text>
-         <text class="footer-big">{{gram}}</text><text class="footer-unit">克</text>
+         <block wx:for-items="{{ton}}"> 
+            <text class="footer-big">{{item}}</text>
+         </block>
+         <text class="footer-unit">吨</text> 
+         <block wx:for-items="{{Kg}}"> 
+            <text class="footer-big">{{item}}</text>
+         </block>
+         <text class="footer-unit">千克</text> 
+         <block wx:for-items="{{gram}}"> 
+            <text class="footer-big">{{item}}</text>
+         </block>
+         <text class="footer-unit">克</text>
        </view>  
        <view class="footer-insurance"> 
-         <!--<image src="{{pro_img}}" class="footer-image"/>-->
+         <image src="{{guard}}" class="insurance-image"/>
          <text class="footer-insurance-text">中华联合财险承保用户黄金财产安全</text> 
        </view>  
        <view class="footer-insurance-style">  
