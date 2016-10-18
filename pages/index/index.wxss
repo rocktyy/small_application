@@ -244,9 +244,10 @@ view.text text {
   display: inline-block;
 }
 .golds_financial .buy_financial{ 
-  margin-left:20rpx; 
-  margin-right:20rpx; 
-  margin-bottom:20rpx; 
+  margin-left:40rpx; 
+  margin-right:40rpx; 
+  margin-bottom:40rpx; 
+  border-radius: 5rpx;
 }
 .golds_financial .buy_financial .gold-buy-now{  
   color: #f3bc52;
